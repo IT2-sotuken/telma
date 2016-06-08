@@ -1,3 +1,28 @@
+# 概要
+
+ローカルにアプリ
+
+# 大まかに設計
+
+鯖側がnode.jsでclientがphonegap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Framework7 PhoneGap Application 
 
 > [Framework7](http://www.idangero.us/framework7) is a Mobile UI framework that can be used to build hybrid apps with PhoneGap. This template allows you to get started using Framework7 
@@ -26,4 +51,4 @@ In your browser, open the file:
     /www/index.html
 
 
-  
+ 
