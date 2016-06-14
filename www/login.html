@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+
+    
+  </head>
+  <body>
+    <!--
+    you can substitue the span of reauth email for a input with the email and
+    include the remember me checkbox
+    -->
+    <div class="container">
+        <div class="card card-container"　>
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin">
+            
+            	<img  id="profile-img"src="supreme.jpg" class=" img-responsive profile-img-card  ">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="email" id="inputEmail" class="form-control" placeholder="メールアドレス" required autofocus>
+                <input type="password" id="inputPassword" class="form-control" placeholder="パスワード" required>
+                
+                <button  class="btn btn-lg btn-primary btn-block btn-signin" type="submit">ログイン</button>
+               
+            </form><!-- /form -->
+             <button class="btn btn-lg btn-success btn-block btn-signin " >新しくアカウントを作る</button>
+           
+           <div align='center'>
+            <a href="#" style= "text-align : center;"  class="forgot-password">
+                パスワードを忘れた方
+            </a>
+            </div>
+       
+        </div><!-- /card-container -->
+    </div><!-- /container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
