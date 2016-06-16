@@ -4,7 +4,11 @@ var io = require('socket.io')(http);
 
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/www/index.html');
+});
+
+app.get('/chat.html', function(req, res){
+  console.log("chat");
 });
 
 io.on('connection', function(socket){
