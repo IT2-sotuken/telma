@@ -1,13 +1,12 @@
 $(document).ready(function(){
-        //var socket = io.connect('localhost:8080');
-        var socket = io.connect('http://localhost:8080');
-        socket.on('greeting', function(data){
-            alert(data);
-        })
-		 socket.on('new-user', function(data){
-        alert(data + ' Have joined!');
-    })
+        var socket = io.connect('http://172.18.93.199:3000');
+        //var socket = io.connect('http://192.168.179.4:8080/');
+        // socket.on('clientsend', function(data){
+        //     alert(data);
+        // })
+
 		$('#go').click(function(){
             socket.emit('user-join',$('#name').val());
         })
+        //alert(socket.connected);
     })

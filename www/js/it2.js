@@ -71,12 +71,13 @@ $$(document).on('pageInit', function (e) {
             // Random message type
             //var messageType = (['sent', 'received'])[Math.round(Math.random())];
             var messageType;
-            socket.on('messageToClient', function (msg) {
+            socket.on('aa', function (msg) {
+                alert(msg);
                 console.log(msg.data);
                 if (msg.userId == userId) messageType = 'sent';
                 else {
                     messageType = 'received';
-                    messageText = msg.data
+                    messageText = msg.data;
                 }
             });
             // Avatar and name for received message
@@ -84,6 +85,7 @@ $$(document).on('pageInit', function (e) {
             if (messageType === 'received') {
                 avatar = '../www/images/profiles/profile-80_4.jpg';
                 name = 'takayama';
+                
             }
             // Add message
             myMessages.addMessage({
